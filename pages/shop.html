@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop My Picks — Ashlee Roberts</title>
+<meta name="description" content="Curated baby product picks organized by developmental phase. Linked to Amazon and ShopMy.">
+<link rel="stylesheet" href="../css/main.css">
+<style>
+  .shop-hero { background: var(--ink); padding: 100px 0 80px; text-align: center; }
+  .shop-hero h1 { color: var(--white); margin-bottom: 16px; }
+  .shop-hero p { color: #9A8880; max-width: 500px; margin: 0 auto; font-size: 16px; font-weight: 300; }
+
+  .phase-nav { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 48px; }
+  .phase-nav-btn {
+    padding: 8px 18px; border-radius: 24px; border: 1px solid var(--border);
+    font-size: 13px; font-weight: 600; cursor: pointer; background: var(--white);
+    color: var(--warm); transition: all 0.15s; text-decoration: none;
+  }
+  .phase-nav-btn:hover, .phase-nav-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
+
+  .shop-category { margin-bottom: 56px; }
+  .shop-category-title { font-family: var(--font-serif); font-size: 26px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
+  .shop-category-desc { font-size: 14px; color: var(--warm); margin-bottom: 24px; }
+
+  .shop-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+  .shop-product-card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .shop-product-image { height: 140px; background: var(--linen); display: flex; align-items: center; justify-content: center; font-size: 44px; }
+  .shop-product-body { padding: 18px; }
+  .shop-product-name { font-size: 15px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+  .shop-product-why { font-size: 13px; color: var(--warm); line-height: 1.5; margin-bottom: 14px; }
+  .shop-product-links { display: flex; gap: 8px; flex-wrap: wrap; }
+  .shop-link { font-size: 12px; padding: 6px 12px; border-radius: 5px; font-weight: 700; text-decoration: none; }
+  .shop-link-amazon { background: #FF9900; color: #111; }
+  .shop-link-shopmy { background: var(--ink); color: white; }
+  .shop-link-diy { background: var(--linen); color: var(--sage); }
+
+  .disclosure-note { background: var(--linen); border-left: 3px solid var(--border); padding: 16px 20px; border-radius: 0 6px 6px 0; margin-bottom: 40px; font-size: 13px; color: var(--warm); line-height: 1.7; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">Ashlee <span>Roberts</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="digital-products.html">Guides</a></li>
+      <li><a href="green-star-grove.html">Farm</a></li>
+      <li><a href="shop.html" class="active">Shop</a></li>
+      <li><a href="YOUR_KIT_FREEBIE_LINK" class="nav-cta">Free Play Chart</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="shop-hero">
+  <div class="container-narrow">
+    <span class="eyebrow" style="color:#6A5A54;">Curated Picks</span>
+    <h1>Things I actually <em>use.</em></h1>
+    <p>Every product here is something I would genuinely recommend to a friend. Organized by developmental phase so you can shop for exactly where your baby is right now.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="disclosure-note">
+      Some links on this page are affiliate links to Amazon (tag: ashleerober09-20) and my ShopMy page. I earn a small commission at no extra cost to you. I only include products I actually recommend — that is the only way this works long-term.
+    </div>
+
+    <div class="phase-nav">
+      <a href="#newborn" class="phase-nav-btn active">🌱 Newborn (0–6 wks)</a>
+      <a href="#two-months" class="phase-nav-btn">👀 2–3 Months</a>
+      <a href="#four-months" class="phase-nav-btn">🖐 4–5 Months</a>
+      <a href="#six-months" class="phase-nav-btn">🌀 6–8 Months</a>
+      <a href="#nine-months" class="phase-nav-btn">🚀 9–12 Months</a>
+    </div>
+
+    <!-- NEWBORN -->
+    <div class="shop-category" id="newborn">
+      <h2 class="shop-category-title">🌱 Newborn Essentials (0–6 Weeks)</h2>
+      <p class="shop-category-desc">The most important thing at this stage is you — but these few products genuinely help.</p>
+      <div class="shop-grid">
+        <div class="shop-product-card">
+          <div class="shop-product-image">🖤</div>
+          <div class="shop-product-body">
+            <p class="shop-product-name">High-Contrast Flash Cards</p>
+            <p class="shop-product-why">Builds visual cortex pathways. Can also DIY with a marker and cardstock — truly free and just as effective.</p>
+            <div class="shop-product-links">
+              <a href="https://www.amazon.com/ideas/YOUR_NEWBORN_LIST_ID?tag=ashleerober09-20" class="shop-link shop-link-amazon">Amazon List</a>
+              <a href="#" class="shop-link shop-link-diy">Free DIY</a>
+            </div>
+          </div>
+        </div>
+        <div class="shop-product-card">
+          <div class="shop-product-image">👶</div>
+          <div class="shop-product-body">
+            <p class="shop-product-name">Baby Wrap Carrier</p>
+            <p class="shop-product-why">For hands-free kangaroo care. One of the highest-return baby purchases you will make in the first year.</p>
+            <div class="shop-product-links">
+              <a href="https://www.amazon.com/ideas/YOUR_NEWBORN_LIST_ID?tag=ashleerober09-20" class="shop-link shop-link-amazon">Amazon List</a>
+              <a href="https://shopmy.us/ashleegroberts" class="shop-link shop-link-shopmy">ShopMy</a>
+            </div>
+          </div>
+        </div>
+        <div class="shop-product-card">
+          <div class="shop-product-image">🪞</div>
+          <div class="shop-product-body">
+            <p class="shop-product-name">Tummy Time Mirror</p>
+            <p class="shop-product-why">Unbreakable acrylic. The best tummy time motivator — babies will hold their heads up longer to look at a face.</p>
+            <div class="shop-product-links">
+              <a href="https://www.amazon.com/ideas/YOUR_NEWBORN_LIST_ID?tag=ashleerober09-20" class="shop-link shop-link-amazon">Amazon List</a>
+            </div>
+          </div>
+        </div>
+        <div class="shop-product-card">
+          <div class="shop-product-image">🎵</div>
+          <div class="shop-product-body">
+            <p class="shop-product-name">White Noise Machine</p>
+            <p class="shop-product-why">Recreates womb acoustics. Supports calm alert windows for play and longer sleep stretches.</p>
+            <div class="shop-product-links">
+              <a href="https://www.amazon.com/ideas/YOUR_NEWBORN_LIST_ID?tag=ashleerober09-20" class="shop-link shop-link-amazon">Amazon List</a>
+              <a href="https://shopmy.us/ashleegroberts" class="shop-link shop-link-shopmy">ShopMy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2-3 MONTHS -->
+    <div class="shop-category" id="two-months">
+      <h2 class="shop-category-title">👀 2–3 Month Play Tools</h2>
+      <p class="shop-category-desc">Social brain is coming online. Activity gym is the big purchase here.</p>
+      <div class="shop-grid">
+        <div class="shop-product-card">
+          <div class="shop-product-image">🏋️</div>
+          <div class="shop-product-body">
+            <p class="shop-product-name">Activity Play Gym</p>
+            <p class="shop-product-why">Used from 6 weeks through 6-plus months. Lovevery is the gold standard; Skip Hop is a solid budget option. Both work.</p>
+            <div class="shop-product-links">
+              <a href="https://www.amazon.com/ideas/YOUR_2MO_LIST_ID?tag=ashleerober09-20" class="shop-link shop-link-amazon">Amazon List</a>
+              <a href="https://shopmy.us/ashleegroberts" class="shop-link shop-link-shopmy">ShopMy Comparison</a>
+            </div>
+          </div>
+        </div>
+        <div class="shop-product-card">
+          <div class="shop-product-image">🎶</div>
+          <div class="shop-product-body">
+            <p class="shop-product-name">Rattle and Teether Set</p>
+            <p class="shop-product-why">Cause and effect plus oral sensory exploration. Silicone and wood options are safest and most satisfying for babies.</p>
+            <div class="shop-product-links">
+              <a href="https://www.amazon.com/ideas/YOUR_2MO_LIST_ID?tag=ashleerober09-20" class="shop-link shop-link-amazon">Amazon List</a>
+              <a href="#" class="shop-link shop-link-diy">DIY: Rice in sealed bottle</a>
+            </div>
+          </div>
+        </div>
+        <div class="shop-product-card">
+          <div class="shop-product-image">📚</div>
+          <div class="shop-product-body">
+            <p class="shop-product-name">Touch and Feel Board Books</p>
+            <p class="shop-product-why">That's Not My series and Karen Katz are the best at this age. Reread the same ones repeatedly — that is how vocabulary builds.</p>
+            <div class="shop-product-links">
+              <a href="https://www.amazon.com/ideas/YOUR_2MO_LIST_ID?tag=ashleerober09-20" class="shop-link shop-link-amazon">Amazon List</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6-8 MONTHS -->
+    <div class="shop-category" id="six-months">
+      <h2 class="shop-category-title">🌀 6–8 Month Must-Haves</h2>
+      <p class="shop-category-desc">Mobility is coming. These support crawling, solids, and gross motor development.</p>
+      <div class="shop-grid">
+        <div class="shop-product-card">
+          <div class="shop-product-image">🏔</div>
+          <div class="shop-product-body">
+            <p class="shop-product-name">Foam Climbing Set</p>
+            <p class="shop-product-why">The single best gross motor investment of the first year. Used heavily from 6 months through toddlerhood. Tiny Land is my top pick.</p>
+            <div class="shop-product-links">
+              <a href="https://www.amazon.com/ideas/YOUR_6MO_LIST_ID?tag=ashleerober09-20" class="shop-link shop-link-amazon">Amazon List</a>
+              <a href="https://shopmy.us/ashleegroberts" class="shop-link shop-link-shopmy">ShopMy</a>
+            </div>
+          </div>
+        </div>
+        <div class="shop-product-card">
+          <div class="shop-product-image">🍽</div>
+          <div class="shop-product-body">
+            <p class="shop-product-name">EZPZ Mini Mat</p>
+            <p class="shop-product-why">For BLW and sensory food play. The suction keeps it in place. A genuine mealtime game-changer once solids start.</p>
+            <div class="shop-product-links">
+              <a href="https://www.amazon.com/ideas/YOUR_6MO_LIST_ID?tag=ashleerober09-20" class="shop-link shop-link-amazon">Amazon List</a>
+              <a href="https://shopmy.us/ashleegroberts" class="shop-link shop-link-shopmy">ShopMy</a>
+            </div>
+          </div>
+        </div>
+        <div class="shop-product-card">
+          <div class="shop-product-image">🎵</div>
+          <div class="shop-product-body">
+            <p class="shop-product-name">Baby Xylophone or Drum</p>
+            <p class="shop-product-why">Cause and effect, fine motor, and auditory exploration all at once. Simple is better — one clear sound per action.</p>
+            <div class="shop-product-links">
+              <a href="https://www.amazon.com/ideas/YOUR_6MO_LIST_ID?tag=ashleerober09-20" class="shop-link shop-link-amazon">Amazon List</a>
+              <a href="#" class="shop-link shop-link-diy">DIY: Pot and wooden spoon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9-12 MONTHS -->
+    <div class="shop-category" id="nine-months">
+      <h2 class="shop-category-title">🚀 9–12 Month Explorer Kit</h2>
+      <p class="shop-category-desc">Problem solving, language, and early walking. These are the picks worth having.</p>
+      <div class="shop-grid">
+        <div class="shop-product-card">
+          <div class="shop-product-image">🧩</div>
+          <div class="shop-product-body">
+            <p class="shop-product-name">Simple Shape Sorter</p>
+            <p class="shop-product-why">2 to 3 shapes only — not the 8-shape kind. Melissa and Doug makes the best one at exactly the right complexity level for this age.</p>
+            <div class="shop-product-links">
+              <a href="https://www.amazon.com/ideas/YOUR_9MO_LIST_ID?tag=ashleerober09-20" class="shop-link shop-link-amazon">Amazon List</a>
+            </div>
+          </div>
+        </div>
+        <div class="shop-product-card">
+          <div class="shop-product-image">🚶</div>
+          <div class="shop-product-body">
+            <p class="shop-product-name">Push Walker Toy</p>
+            <p class="shop-product-why">Supports pre-walking and gives vestibular input for upright movement before independent walking. Look for adjustable resistance.</p>
+            <div class="shop-product-links">
+              <a href="https://www.amazon.com/ideas/YOUR_9MO_LIST_ID?tag=ashleerober09-20" class="shop-link shop-link-amazon">Amazon List</a>
+              <a href="https://shopmy.us/ashleegroberts" class="shop-link shop-link-shopmy">ShopMy</a>
+            </div>
+          </div>
+        </div>
+        <div class="shop-product-card">
+          <div class="shop-product-image">🎨</div>
+          <div class="shop-product-body">
+            <p class="shop-product-name">Washable Finger Paint</p>
+            <p class="shop-product-why">Crayola non-toxic washable. Or make your own from yogurt and food coloring for the eat-everything stage.</p>
+            <div class="shop-product-links">
+              <a href="https://www.amazon.com/ideas/YOUR_9MO_LIST_ID?tag=ashleerober09-20" class="shop-link shop-link-amazon">Amazon List</a>
+              <a href="#" class="shop-link shop-link-diy">DIY: Yogurt plus food coloring</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; padding:32px 0;">
+      <a href="https://shopmy.us/ashleegroberts" class="btn btn-secondary btn-lg">See All My Collections on ShopMy →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <p class="footer-brand">Ashlee <span>Roberts</span></p>
+        <p class="footer-tagline">Baby development guides, farm life, and honest mom resources from Granbury, Texas.</p>
+        <div class="footer-social">
+          <a href="https://pinterest.com/ashleegroberts">📌</a>
+          <a href="https://tiktok.com/@ashleegroberts">🎵</a>
+          <a href="https://shopmy.us/ashleegroberts">🛍</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Shop By Phase</p>
+        <ul class="footer-links">
+          <li><a href="#newborn">Newborn Picks</a></li>
+          <li><a href="#two-months">2–3 Month Picks</a></li>
+          <li><a href="#six-months">6–8 Month Picks</a></li>
+          <li><a href="#nine-months">9–12 Month Picks</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Navigate</p>
+        <ul class="footer-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="digital-products.html">Guides</a></li>
+          <li><a href="green-star-grove.html">Farm</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <ul class="footer-links">
+          <li><a href="mailto:ashleegroberts@gmail.com">Email Ashlee</a></li>
+          <li><a href="disclosure.html">Affiliate Disclosure</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 ASHLEE ROBERTS · ALL RIGHTS RESERVED</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="disclosure.html">Affiliate Disclosure</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menuBtn').addEventListener('click', () =>
+    document.getElementById('navLinks').classList.toggle('open'));
+  document.querySelectorAll('.phase-nav-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.phase-nav-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

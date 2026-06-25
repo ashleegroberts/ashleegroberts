@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green Star Grove — Ashlee Roberts</title>
+<meta name="description" content="Pasture-raised eggs and artisan sourdough from Green Star Grove in Granbury, Texas. Available at the Granbury Farmers Market and farm pickup.">
+<link rel="stylesheet" href="../css/main.css">
+<style>
+  .farm-hero {
+    background: var(--ink); padding: 100px 0 80px;
+    display: grid; grid-template-columns: 1fr 1fr;
+    align-items: center; gap: 64px;
+    position: relative; overflow: hidden;
+  }
+  .farm-hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, #7A947018 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .farm-hero-content { padding: 0 0 0 80px; position: relative; z-index: 1; }
+  .farm-hero h1 { color: var(--white); margin-bottom: 16px; }
+  .farm-hero p { color: #9A8880; font-size: 16px; font-weight: 300; line-height: 1.8; margin-bottom: 28px; }
+  .farm-hero-image { height: 500px; background: rgba(122,148,112,0.12); border-radius: 0; display: flex; align-items: center; justify-content: center; font-size: 100px; }
+
+  .product-section { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; padding: 80px 0; }
+  .product-section.reverse { direction: rtl; }
+  .product-section.reverse > * { direction: ltr; }
+  .product-image { background: var(--linen); border-radius: 16px; aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; font-size: 80px; }
+  .product-details { }
+
+  .market-card {
+    background: var(--ink); border-radius: 12px; padding: 36px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start;
+  }
+  .market-detail { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 20px; }
+  .market-detail-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+  .market-detail-label { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #5A4A44; margin-bottom: 4px; }
+  .market-detail-value { font-size: 15px; color: #9A8880; line-height: 1.5; }
+  .market-detail-value strong { color: var(--white); font-weight: 700; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">Ashlee <span>Roberts</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="digital-products.html">Guides</a></li>
+      <li><a href="green-star-grove.html" class="active">Farm</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="YOUR_KIT_FREEBIE_LINK" class="nav-cta">Free Play Chart</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="farm-hero" style="padding:0;">
+  <div class="farm-hero-content">
+    <span class="eyebrow" style="color:#7A9470;">Granbury, Texas</span>
+    <h1>Green Star <em>Grove</em></h1>
+    <p>A small farm doing things the slow, intentional way — pasture-raised eggs, long-fermented sourdough, and the kind of food that reminds you why it matters where it comes from.</p>
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <a href="#find-us" class="btn btn-sage">Find Us →</a>
+      <a href="#eggs" class="btn btn-outline" style="color:var(--blush); border-color:rgba(242,196,178,0.3);">Our Products</a>
+    </div>
+  </div>
+  <div class="farm-hero-image">🌾</div>
+</div>
+
+<!-- EGGS -->
+<section id="eggs">
+  <div class="container">
+    <div class="product-section">
+      <div class="product-image">🥚</div>
+      <div class="product-details">
+        <span class="eyebrow">From Our Flock</span>
+        <h2>Pasture-Raised <em>Eggs</em></h2>
+        <div class="rule-accent"></div>
+        <p>Our hens roam on fresh pasture year-round — actual grass, actual sunshine, actual space to do what chickens do. The difference shows up in the yolk: deep orange, rich, and full of the nutrients that come from real outdoor living.</p>
+        <p>If you have only ever bought grocery store eggs, the first time you crack one of ours you will notice. That is not marketing — that is just what eggs look like when the hens live well.</p>
+        <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:20px;">
+          <span class="badge badge-sage">Pasture-Raised</span>
+          <span class="badge badge-gold">No Hormones</span>
+          <span class="badge badge-accent">Granbury, TX</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOURDOUGH -->
+<section class="section-linen" id="sourdough">
+  <div class="container">
+    <div class="product-section reverse">
+      <div class="product-image">🍞</div>
+      <div class="product-details">
+        <span class="eyebrow">From Our Kitchen</span>
+        <h2>Artisan <em>Sourdough</em></h2>
+        <div class="rule-accent"></div>
+        <p>Long-fermented, naturally leavened sourdough made in small batches. Our starter has been fed and maintained for years, which means the flavor and texture you get in every loaf is the result of time and patience, not shortcuts.</p>
+        <p>We offer classic sourdough alongside our Spicy Monterey Jalapeño variety — which has developed a loyal following at the market, and for good reason.</p>
+        <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:20px;">
+          <span class="badge badge-sage">Naturally Leavened</span>
+          <span class="badge badge-gold">Long Fermented</span>
+          <span class="badge badge-accent">Small Batches</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FIND US -->
+<section id="find-us">
+  <div class="container">
+    <div style="text-align:center; max-width:520px; margin:0 auto 40px;">
+      <span class="eyebrow">Find Green Star Grove</span>
+      <h2>Come find us in <em>Granbury.</em></h2>
+      <p>We are at the farmers market every other Saturday and available for farm pickup. Follow us on social media for updates on market dates and what we are bringing each week.</p>
+    </div>
+    <div class="market-card">
+      <div>
+        <div class="market-detail">
+          <span class="market-detail-icon">📍</span>
+          <div>
+            <p class="market-detail-label">Location</p>
+            <p class="market-detail-value"><strong>Granbury Farmers Market</strong><br>Granbury, Texas</p>
+          </div>
+        </div>
+        <div class="market-detail">
+          <span class="market-detail-icon">🗓</span>
+          <div>
+            <p class="market-detail-label">Schedule</p>
+            <p class="market-detail-value"><strong>Every other Saturday</strong><br>Follow along for exact dates and times</p>
+          </div>
+        </div>
+        <div class="market-detail">
+          <span class="market-detail-icon">🚗</span>
+          <div>
+            <p class="market-detail-label">Farm Pickup</p>
+            <p class="market-detail-value">Available in Granbury — <strong>DM or email to arrange</strong></p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p style="font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:#5A4A44; margin-bottom:16px;">Stay Updated</p>
+        <p style="color:#9A8880; font-size:14px; line-height:1.7; margin-bottom:20px;">The best way to know what we are bringing and when we will be at the market is to follow along on social media or send us an email.</p>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <a href="https://pinterest.com/ashleegroberts" class="btn btn-outline" style="color:var(--blush); border-color:rgba(242,196,178,0.2); justify-content:center;">📌 Pinterest</a>
+          <a href="https://tiktok.com/@ashleegroberts" class="btn btn-outline" style="color:var(--blush); border-color:rgba(242,196,178,0.2); justify-content:center;">🎵 TikTok</a>
+          <a href="mailto:ashleegroberts@gmail.com" class="btn btn-sage" style="justify-content:center;">Email Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <p class="footer-brand">Ashlee <span>Roberts</span></p>
+        <p class="footer-tagline">Baby development guides, farm life, and honest mom resources from Granbury, Texas.</p>
+        <div class="footer-social">
+          <a href="https://pinterest.com/ashleegroberts">📌</a>
+          <a href="https://tiktok.com/@ashleegroberts">🎵</a>
+          <a href="https://shopmy.us/ashleegroberts">🛍</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Farm</p>
+        <ul class="footer-links">
+          <li><a href="#eggs">Pasture-Raised Eggs</a></li>
+          <li><a href="#sourdough">Artisan Sourdough</a></li>
+          <li><a href="#find-us">Find Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Navigate</p>
+        <ul class="footer-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="digital-products.html">Guides</a></li>
+          <li><a href="shop.html">Shop</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <ul class="footer-links">
+          <li><a href="mailto:ashleegroberts@gmail.com">Email Ashlee</a></li>
+          <li><a href="https://shopmy.us/ashleegroberts">ShopMy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 ASHLEE ROBERTS · ALL RIGHTS RESERVED</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="disclosure.html">Affiliate Disclosure</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menuBtn').addEventListener('click', () =>
+    document.getElementById('navLinks').classList.toggle('open'));
+</script>
+</body>
+</html>
