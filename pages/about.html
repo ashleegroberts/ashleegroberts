@@ -5,91 +5,261 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Ashlee — Ashlee Roberts</title>
 <meta name="description" content="Mom, farmer, and content creator in Granbury, Texas. Baby development resources, pasture-raised eggs, and artisan sourdough.">
-<link rel="stylesheet" href="../css/main.css">
-<style>
-  .about-hero { background: var(--ink); padding: 100px 0 80px; }
-  .about-hero-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; max-width: var(--max-width); margin: 0 auto; padding: 0 32px; }
-  .about-hero h1 { color: var(--white); margin-bottom: 16px; }
-  .about-hero p { color: #9A8880; font-size: 16px; font-weight: 300; line-height: 1.8; }
-  .about-hero-image { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; aspect-ratio: 4/5; display: flex; align-items: center; justify-content: center; font-size: 80px; }
-
-  .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-  .value-card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 28px 24px; }
-  .value-icon { font-size: 32px; margin-bottom: 14px; }
-  .value-title { font-family: var(--font-serif); font-size: 20px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
-  .value-desc { font-size: 14px; color: var(--warm); line-height: 1.7; }
-
-  .timeline { max-width: 640px; margin: 0 auto; }
-  .timeline-item { display: grid; grid-template-columns: 80px 1fr; gap: 24px; margin-bottom: 32px; }
-  .timeline-year { font-family: var(--font-serif); font-size: 22px; font-weight: 600; color: var(--accent); text-align: right; padding-top: 4px; }
-  .timeline-content { border-left: 2px solid var(--border); padding-left: 24px; padding-bottom: 32px; }
-  .timeline-title { font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
-  .timeline-desc { font-size: 14px; color: var(--warm); line-height: 1.7; }
-
-  .collab-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-  .collab-card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 24px; text-align: center; }
-  .collab-icon { font-size: 36px; margin-bottom: 12px; }
-  .collab-name { font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
-  .collab-role { font-size: 12px; color: var(--warm); }
-</style>
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="../css/main.css">
+<style>
+  body { background: #F5F0E8; }
+
+  /* ── HERO ── */
+  .about-hero {
+    background: #F5F0E8;
+    padding: 64px 32px 48px;
+    
+  }
+  .about-hero-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  .about-avatar {
+    width: 140px; height: 140px;
+    border-radius: 50%;
+    background: #F5F0E8;
+    border: 1px solid var(--border);
+    display: flex; align-items: center;
+    justify-content: center; font-size: 48px;
+    flex-shrink: 0;
+  }
+  .about-hero h1 { font-size: clamp(32px, 5vw, 44px); margin-bottom: 10px; }
+  .about-hero p { font-size: 15px; color: var(--warm); font-weight: 300; line-height: 1.8; max-width: 500px; }
+
+  /* ── STORY ── */
+  .story-section {
+    background: #F5F0E8;
+    padding: 56px 32px;
+    
+  }
+  .story-inner { max-width: 680px; margin: 0 auto; }
+  .story-inner h2 { font-size: 28px; margin-bottom: 20px; }
+  .story-inner p { font-size: 15px; color: var(--warm); font-weight: 300; line-height: 1.9; margin-bottom: 16px; }
+  .story-inner p:last-child { margin-bottom: 0; }
+  .story-inner p strong { color: var(--ink); font-weight: 600; }
+
+  /* ── WHAT I DO ── */
+  .what-section {
+    background: #F5F0E8;
+    padding: 56px 32px;
+    
+  }
+  .what-inner { max-width: 760px; margin: 0 auto; }
+  .what-inner h2 { font-size: 28px; margin-bottom: 32px; text-align: center; }
+  .what-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .what-card {
+    background: #F5F0E8;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px 20px;
+    text-align: center;
+  }
+  .what-icon { font-size: 28px; margin-bottom: 12px; }
+  .what-name { font-family: var(--serif); font-size: 17px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
+  .what-desc { font-size: 13px; color: var(--warm); line-height: 1.6; font-weight: 300; }
+
+  /* ── VALUES ── */
+  .values-section {
+    background: #F5F0E8;
+    padding: 56px 32px;
+    
+  }
+  .values-inner { max-width: 760px; margin: 0 auto; }
+  .values-inner h2 { font-size: 28px; margin-bottom: 32px; }
+  .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .value-card {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px 20px;
+    background: #F5F0E8;
+  }
+  .value-icon { font-size: 24px; margin-bottom: 10px; }
+  .value-title { font-family: var(--serif); font-size: 17px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
+  .value-desc { font-size: 13px; color: var(--warm); line-height: 1.65; font-weight: 300; }
+
+  /* ── CTA ── */
+  .about-cta {
+    background: var(--ink);
+    padding: 56px 32px;
+    text-align: center;
+  }
+  .about-cta h2 { font-family: var(--serif); font-size: 28px; color: white; margin-bottom: 10px; }
+  .about-cta h2 em { color: #3A2E28; font-style: italic; }
+  .about-cta p { color: #6A5A4A; font-size: 14px; max-width: 440px; margin: 0 auto 28px; font-weight: 300; }
+
+  @media (max-width: 700px) {
+    .about-hero-inner { grid-template-columns: 1fr; text-align: center; }
+    .about-avatar { margin: 0 auto; }
+    .what-grid, .values-grid { grid-template-columns: 1fr; }
+  }
+  h1 em, h2 em { color: #3A2E28 !important; font-style: italic; }
+  .eyebrow { color: #3A2E28 !important; }
+  .about-avatar { background: #F5F0E8; }
+  .what-section { background: #F5F0E8 !important; }
+  .story-section { background: #F5F0E8 !important; border: none !important; }
+  .values-section { background: #F5F0E8 !important; border: none !important; }
+  .what-section { border: none !important; }
+</style>
 </head>
 <body>
+
 <nav class="nav">
   <div class="nav-inner">
     <a href="../index.html" class="nav-logo">Ashlee Roberts</a>
     <ul class="nav-links" id="navLinks">
       <li><a href="../index.html">Home</a></li>
-      <li><a href="blog.html" >Blog</a></li>
-      <li><a href="digital-products.html" >Guides</a></li>
-      <li><a href="shop.html" >Shop</a></li>
-      <li><a href="https://www.gsgrove.com" >Farm</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="digital-products.html">Guides</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="https://www.gsgrove.com">Farm</a></li>
       <li><a href="about.html" class="active">About</a></li>
       <li><a href="https://shop.ashleegroberts.com/freebie" class="nav-cta">Free Chart</a></li>
     </ul>
     <button class="nav-menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
+<div class="accent-bar"></div>
 
 <!-- HERO -->
-<section style="background:var(--parch);padding:72px 32px 56px;">
-  <div style="max-width:720px;margin:0 auto;">
-    <span class="eyebrow">Granbury, Texas</span>
-    <h1>Hey, I'm <em>Ashlee.</em></h1>
-    <p style="font-size:16px;color:var(--muted);max-width:560px;font-weight:300;margin-top:12px;">Mom to a baby boy, farmer, sourdough baker, and content creator living a deliberately rooted life in Granbury, Texas. I share real resources for parents who want both intention and simplicity — in the baby years, in the kitchen, and on the farm.</p>
+<div class="about-hero">
+  <div class="about-hero-inner">
+    <div class="about-avatar">🌿
+      <!-- Replace with: <img src="../images/ashlee-headshot.jpg" alt="Ashlee Roberts" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"> -->
+    </div>
+    <div>
+      <span class="eyebrow">Granbury, Texas</span>
+      <h1>Hey, I'm <em>Ashlee.</em></h1>
+      <p>Mom to a baby boy, farmer, sourdough baker, and content creator living a deliberately rooted life in Granbury, Texas.</p>
+    </div>
   </div>
-</section>
+</div>
+
+<!-- MY STORY -->
+<div class="story-section">
+  <div class="story-inner">
+    <span class="eyebrow">My Story</span>
+    <h2>How I got <em>here.</em></h2>
+    <p>Farming wasn't my dream first — it was my husband's. Moving to Granbury and building Green Star Grove was an act of love, a choice to help him live out something he had always wanted. But somewhere between the early mornings, the chickens, and the sourdough that kept coming out better than the last batch, it became mine too.</p>
+    <p>When our son was born I threw myself into understanding baby development the same way I approach everything — reading everything I can get my hands on, testing what actually works in real life, and filtering out what doesn't. I made Play on Purpose because I genuinely believe every parent deserves the information I had to dig for.</p>
+    <p>Everything I share comes from real experience. That is the only version of this I know how to do.</p>
+  </div>
+</div>
+
+<!-- WHAT I DO -->
+<div class="what-section">
+  <div class="what-inner">
+    <h2>A few different things, all <em>connected.</em></h2>
+    <div class="what-grid">
+      <div class="what-card">
+        <div class="what-icon">📖</div>
+        <p class="what-name">Digital Guides</p>
+        <p class="what-desc">Science-backed baby development resources parents can actually use — starting with Play on Purpose: Baby's First Year.</p>
+      </div>
+      <div class="what-card">
+        <div class="what-icon">🥚</div>
+        <p class="what-name">Green Star Grove</p>
+        <p class="what-desc">Pasture-raised eggs and artisan sourdough at the Granbury Farmers Market every other Saturday.</p>
+      </div>
+      <div class="what-card">
+        <div class="what-icon">📱</div>
+        <p class="what-name">UGC and Brand Work</p>
+        <p class="what-desc">Content creator and brand ambassador for baby and lifestyle brands I actually use — no pretending required.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VALUES -->
+<div class="values-section">
+  <div class="values-inner">
+    <span class="eyebrow">What You Will Always Get From Me</span>
+    <h2>What I stand <em>for.</em></h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">🔬</div>
+        <p class="value-title">Real Research</p>
+        <p class="value-desc">I read everything I can get my hands on, apply what actually works, and filter out what doesn't. If something doesn't hold up when I try it myself, I don't share it.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">💸</div>
+        <p class="value-title">Budget Honesty</p>
+        <p class="value-desc">I include a free or low-cost alternative for everything I recommend. You do not need to spend money to do this well. Products are listed because they are genuinely useful.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🌱</div>
+        <p class="value-title">Rooted Living</p>
+        <p class="value-desc">Farm life teaches you that the slow, intentional way usually produces the best results. I try to bring that same philosophy to parenting, content, and everything else.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="about-cta">
+  <h2>Start with the <em>free chart.</em></h2>
+  <p>All five developmental phases at a glance — free, instant, no catch.</p>
+  <a href="https://shop.ashleegroberts.com/freebie" class="btn btn-primary">Get the Free Chart</a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
       <div>
-        <p class="footer-col-title">Guides</p>
+        <p class="footer-brand">Ashlee Roberts</p>
+        <p class="footer-tagline">Baby development, farm life, and honest resources from Granbury, Texas.</p>
+        <div class="footer-social">
+          <a href="https://pinterest.com/ashleegroberts">📌</a>
+          <a href="https://tiktok.com/@ashleegroberts">🎵</a>
+          <a href="https://shopmy.us/ashleegroberts">🛍</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Blog</p>
+        <ul class="footer-links">
+          <li><a href="blog.html#baby">Baby + Toddler</a></li>
+          <li><a href="blog.html#farm">Farm + Homestead</a></li>
+          <li><a href="blog.html#sourdough">Sourdough + Baking</a></li>
+          <li><a href="blog.html#everyday">The Everyday</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Resources</p>
         <ul class="footer-links">
           <li><a href="https://shop.ashleegroberts.com/freebie">Free Play Chart</a></li>
           <li><a href="digital-products.html">Play on Purpose</a></li>
+          <li><a href="shop.html">Shop My Picks</a></li>
         </ul>
       </div>
       <div>
         <p class="footer-col-title">Navigate</p>
         <ul class="footer-links">
           <li><a href="../index.html">Home</a></li>
-          <li><a href="https://www.gsgrove.com">Farm</a></li>
-          <li><a href="shop.html">Shop</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="footer-col-title">Contact</p>
-        <ul class="footer-links">
-          <li><a href="mailto:ashleegroberts@gmail.com">Email Ashlee</a></li>
-          <li><a href="https://shopmy.us/ashleegroberts">ShopMy</a></li>
-        </ul>
+          <li><a href="https://www.gsgrove.com">Green Star Grove</a></li>
+          <li><a href="mailto:ashleegroberts@gmail.com">Email Me</a></li>
+          </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">© 2025 ASHLEE ROBERTS · ALL RIGHTS RESERVED</p>
       <div class="footer-legal">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="disclosure.html">Affiliate Disclosure</a>
+        
       </div>
     </div>
   </div>

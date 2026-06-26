@@ -53,7 +53,7 @@
     background: var(--linen); border-radius: 8px; padding: 12px 20px;
     margin-bottom: 24px;
   }
-  .price-amount { font-family: var(--font-serif); font-size: 48px; font-weight: 700; color: var(--accent); line-height: 1; }
+  .price-amount { font-family: var(--font-serif); font-size: 48px; font-weight: 700; color: #3A2E28; line-height: 1; }
   .price-label { font-size: 13px; color: var(--warm); }
 
   .includes-list { list-style: none; padding: 0; margin-bottom: 32px; }
@@ -71,11 +71,11 @@
   .phase-card-icon { font-size: 24px; margin-bottom: 8px; }
   .phase-card-age { font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700; margin-bottom: 4px; }
   .phase-card-name { font-family: var(--font-serif); font-size: 15px; font-weight: 600; color: var(--ink); }
-  .phase-card-body { background: var(--white); padding: 12px 14px; }
+  .phase-card-body { background: #F5F0E8; padding: 12px 14px; }
   .phase-card-list { list-style: none; padding: 0; }
   .phase-card-list li { font-size: 11px; color: var(--warm); padding: 3px 0; padding-left: 10px; position: relative; border-bottom: 1px solid var(--linen); line-height: 1.4; }
   .phase-card-list li:last-child { border-bottom: none; }
-  .phase-card-list li::before { content: '·'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+  .phase-card-list li::before { content: '·'; position: absolute; left: 0; color: #3A2E28; font-weight: 700; }
 
   .freebie-section { background: var(--linen); }
   .freebie-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
@@ -109,6 +109,7 @@
     <button class="nav-menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
+<div class="accent-bar"></div>
 
 <section style="padding:72px 32px 56px;background:var(--parch);text-align:center;">
   <div style="max-width:720px;margin:0 auto;">
@@ -266,7 +267,7 @@
         <p style="font-size:12px; color:var(--muted); margin-top:10px;">Free PDF. No spam. Unsubscribe any time.</p>
       </div>
       <div class="freebie-visual" style="padding:0;overflow:hidden;background:transparent;border:none;">
-        <img src="../images/freebie-mockup.png" alt="Free baby play quick reference chart" style="width:100%;display:block;border-radius:12px;">
+        <img src="../images/freebie-mockup.png" alt="Free baby play quick reference chart" style="width:100%;max-width:360px;display:block;border-radius:10px;margin:0 auto;">
       </div>
       </div>
     </div>
@@ -277,7 +278,7 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div>
-        <p class="footer-brand">Ashlee <span>Roberts</span></p>
+        <p class="footer-brand">Ashlee Roberts</p>
         <p class="footer-tagline">Baby development guides, farm life, and honest mom resources from Granbury, Texas.</p>
         <div class="footer-social">
           <a href="https://pinterest.com/ashleegroberts">📌</a>
@@ -306,15 +307,14 @@
         <ul class="footer-links">
           <li><a href="mailto:ashleegroberts@gmail.com">Email Ashlee</a></li>
           <li><a href="https://shopmy.us/ashleegroberts">ShopMy</a></li>
-          <li><a href="disclosure.html">Affiliate Disclosure</a></li>
-        </ul>
+          </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">© 2025 ASHLEE ROBERTS · ALL RIGHTS RESERVED</p>
       <div class="footer-legal">
         <a href="privacy.html">Privacy Policy</a>
-        <a href="disclosure.html">Affiliate Disclosure</a>
+        
       </div>
     </div>
   </div>

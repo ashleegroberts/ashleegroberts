@@ -14,17 +14,17 @@
   .phase-nav { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 48px; }
   .phase-nav-btn {
     padding: 8px 18px; border-radius: 24px; border: 1px solid var(--border);
-    font-size: 13px; font-weight: 600; cursor: pointer; background: var(--white);
+    font-size: 13px; font-weight: 600; cursor: pointer; background: #F5F0E8;
     color: var(--warm); transition: all 0.15s; text-decoration: none;
   }
-  .phase-nav-btn:hover, .phase-nav-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
+  .phase-nav-btn:hover, .phase-nav-btn.active { background: var(--accent); color: white; border-color: #3A2E28; }
 
   .shop-category { margin-bottom: 56px; }
   .shop-category-title { font-family: var(--font-serif); font-size: 26px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
   .shop-category-desc { font-size: 14px; color: var(--warm); margin-bottom: 24px; }
 
   .shop-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
-  .shop-product-card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .shop-product-card { background: #F5F0E8; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
   .shop-product-image { height: 140px; background: var(--linen); display: flex; align-items: center; justify-content: center; font-size: 44px; }
   .shop-product-body { padding: 18px; }
   .shop-product-name { font-size: 15px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
@@ -51,13 +51,14 @@
       <li><a href="blog.html" >Blog</a></li>
       <li><a href="digital-products.html" >Guides</a></li>
       <li><a href="shop.html" class="active">Shop</a></li>
-      <li><a href="green-star-grove.html" >Farm</a></li>
+      <li><a href="https://www.gsgrove.com" >Farm</a></li>
       <li><a href="about.html" >About</a></li>
       <li><a href="https://shop.ashleegroberts.com/freebie" class="nav-cta">Free Chart</a></li>
     </ul>
     <button class="nav-menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
+<div class="accent-bar"></div>
 
 <div style="background:var(--parch);padding:72px 32px 56px;text-align:center;">
   <div class="container-narrow">
@@ -70,7 +71,7 @@
 <section>
   <div class="container">
     <div class="disclosure-note">
-      Some links on this page are affiliate links to Amazon (tag: ashleerober09-20) and my ShopMy page. I earn a small commission at no extra cost to you. I only include products I actually recommend — that is the only way this works long-term.
+      Some links on this page are affiliate links. I earn a small commission at no extra cost to you. I only include products I actually recommend.
     </div>
 
     <div class="phase-nav">
@@ -83,9 +84,9 @@
 
     <!-- NEWBORN -->
     <div class="shop-category" id="newborn">
-      <h2 class="shop-category-title">🌱 Newborn Essentials (0–6 Weeks)</h2>
-      <p class="shop-category-desc">The most important thing at this stage is you — but these few products genuinely help.</p>
-      <div class="shop-grid" style="justify-items:center;">
+      <h2 class="shop-category-title" style="text-align:center;">🌱 Newborn Essentials (0–6 Weeks)</h2>
+      <p class="shop-category-desc" style="text-align:center;">The most important thing at this stage is you — but these few products genuinely help.</p>
+      <div class="shop-grid" style="max-width:900px;margin:0 auto;" style="justify-items:center;">
         <div class="shop-product-card">
           <div class="shop-product-image">🖤</div>
           <div class="shop-product-body">
@@ -134,9 +135,9 @@
 
     <!-- 2-3 MONTHS -->
     <div class="shop-category" id="two-months">
-      <h2 class="shop-category-title">👀 2–3 Month Play Tools</h2>
-      <p class="shop-category-desc">Social brain is coming online. Activity gym is the big purchase here.</p>
-      <div class="shop-grid" style="justify-items:center;">
+      <h2 class="shop-category-title" style="text-align:center;">👀 2–3 Month Play Tools</h2>
+      <p class="shop-category-desc" style="text-align:center;">Social brain is coming online. Activity gym is the big purchase here.</p>
+      <div class="shop-grid" style="max-width:900px;margin:0 auto;" style="justify-items:center;">
         <div class="shop-product-card">
           <div class="shop-product-image">🏋️</div>
           <div class="shop-product-body">
@@ -174,9 +175,9 @@
 
     <!-- 6-8 MONTHS -->
     <div class="shop-category" id="six-months">
-      <h2 class="shop-category-title">🌀 6–8 Month Must-Haves</h2>
-      <p class="shop-category-desc">Mobility is coming. These support crawling, solids, and gross motor development.</p>
-      <div class="shop-grid" style="justify-items:center;">
+      <h2 class="shop-category-title" style="text-align:center;">🌀 6–8 Month Must-Haves</h2>
+      <p class="shop-category-desc" style="text-align:center;">Mobility is coming. These support crawling, solids, and gross motor development.</p>
+      <div class="shop-grid" style="max-width:900px;margin:0 auto;" style="justify-items:center;">
         <div class="shop-product-card">
           <div class="shop-product-image">🏔</div>
           <div class="shop-product-body">
@@ -215,9 +216,9 @@
 
     <!-- 9-12 MONTHS -->
     <div class="shop-category" id="nine-months">
-      <h2 class="shop-category-title">🚀 9–12 Month Explorer Kit</h2>
-      <p class="shop-category-desc">Problem solving, language, and early walking. These are the picks worth having.</p>
-      <div class="shop-grid" style="justify-items:center;">
+      <h2 class="shop-category-title" style="text-align:center;">🚀 9–12 Month Explorer Kit</h2>
+      <p class="shop-category-desc" style="text-align:center;">Problem solving, language, and early walking. These are the picks worth having.</p>
+      <div class="shop-grid" style="max-width:900px;margin:0 auto;" style="justify-items:center;">
         <div class="shop-product-card">
           <div class="shop-product-image">🧩</div>
           <div class="shop-product-body">
@@ -263,7 +264,7 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div>
-        <p class="footer-brand">Ashlee <span>Roberts</span></p>
+        <p class="footer-brand">Ashlee Roberts</p>
         <p class="footer-tagline">Baby development guides, farm life, and honest mom resources from Granbury, Texas.</p>
         <div class="footer-social">
           <a href="https://pinterest.com/ashleegroberts">📌</a>
@@ -285,7 +286,7 @@
         <ul class="footer-links">
           <li><a href="../index.html">Home</a></li>
           <li><a href="digital-products.html">Guides</a></li>
-          <li><a href="green-star-grove.html">Farm</a></li>
+          <li><a href="https://www.gsgrove.com">Farm</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
       </div>
@@ -293,7 +294,6 @@
         <p class="footer-col-title">Contact</p>
         <ul class="footer-links">
           <li><a href="mailto:ashleegroberts@gmail.com">Email Ashlee</a></li>
-          <li><a href="disclosure.html">Affiliate Disclosure</a></li>
           <li><a href="privacy.html">Privacy Policy</a></li>
         </ul>
       </div>
@@ -302,7 +302,7 @@
       <p class="footer-copy">© 2025 ASHLEE ROBERTS · ALL RIGHTS RESERVED</p>
       <div class="footer-legal">
         <a href="privacy.html">Privacy Policy</a>
-        <a href="disclosure.html">Affiliate Disclosure</a>
+        
       </div>
     </div>
   </div>
