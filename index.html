@@ -3,147 +3,120 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ashlee Roberts — Baby Development, Farm Life & Real Mom Resources</title>
-<meta name="description" content="Baby development guides, farm-raised eggs, artisan sourdough, and honest mom resources from Granbury, Texas. By Ashlee Roberts.">
-<meta property="og:title" content="Ashlee Roberts — Baby Development & Farm Life">
-<meta property="og:description" content="Baby development guides, farm-raised eggs, artisan sourdough, and honest mom resources.">
-<meta property="og:image" content="images/og-home.jpg">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+<title>Ashlee Roberts — Rooted Living, Real Life</title>
+<meta name="description" content="Baby development, farm life, sourdough baking, and the everyday from a small farm in Granbury, Texas.">
+<meta property="og:title" content="Ashlee Roberts — Rooted Living, Real Life">
+<meta property="og:description" content="Baby development, farm life, sourdough baking, and the everyday from Granbury, Texas.">
 <link rel="stylesheet" href="css/main.css">
 <style>
   /* ── HERO ── */
   .hero {
-    min-height: 92vh;
-    background: var(--ink);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-  }
-  .hero::before {
-    content: '';
-    position: absolute; inset: 0;
-    background: radial-gradient(ellipse at 65% 50%, #C47D5E16 0%, transparent 60%);
-    pointer-events: none;
-  }
-  .hero-content { padding: 80px 60px 80px 80px; position: relative; z-index: 1; }
-  .hero-eyebrow { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--blush); font-weight: 600; margin-bottom: 20px; display: block; opacity: 0.7; }
-  .hero h1 { color: var(--white); margin-bottom: 20px; }
-  .hero p { color: #9A8880; font-size: 17px; max-width: 440px; margin-bottom: 36px; font-weight: 300; }
-  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
-  .hero-image {
-    height: 92vh;
-    background: linear-gradient(135deg, #3A2E2A 0%, #1E1614 100%);
-    display: flex; align-items: center; justify-content: center;
-    position: relative; overflow: hidden;
-  }
-  .hero-image-placeholder {
-    width: 300px; height: 380px;
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 16px;
-    display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-    gap: 12px; text-align: center; padding: 32px;
-  }
-  .hero-image-placeholder p { color: #5A4A44; font-size: 13px; }
-  .hero-image-placeholder .big { font-size: 48px; }
-
-  /* ── INTRO STRIP ── */
-  .intro-strip {
-    background: var(--linen);
-    border-bottom: 1px solid var(--border);
-    padding: 32px 0;
-  }
-  .strip-inner {
-    display: flex; align-items: center;
-    justify-content: center; gap: 48px; flex-wrap: wrap;
-  }
-  .strip-item { text-align: center; }
-  .strip-num { font-family: var(--font-serif); font-size: 32px; font-weight: 700; color: var(--accent); line-height: 1; margin-bottom: 4px; }
-  .strip-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
-  .strip-divider { width: 1px; height: 40px; background: var(--border); }
-
-  /* ── FEATURED ── */
-  .featured-guide {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 64px;
-    align-items: center;
-  }
-  .featured-visual {
-    background: var(--ink);
-    border-radius: 16px;
-    padding: 48px 36px;
+    background: var(--parch);
+    padding: 100px 32px 80px;
     text-align: center;
     position: relative;
     overflow: hidden;
   }
-  .featured-visual::after {
+  .hero::before {
     content: '';
-    position: absolute; top: -40px; right: -40px;
-    width: 200px; height: 200px; border-radius: 50%;
-    background: radial-gradient(circle, #C47D5E18, transparent 70%);
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(to right, #F2D4B8, #C09070, #A07850);
   }
-  .featured-visual h3 { font-family: var(--font-serif); font-size: 28px; color: var(--white); margin-bottom: 6px; }
-  .featured-visual h3 em { color: var(--blush); font-style: italic; }
-  .featured-visual p { color: #7A6355; font-size: 13px; margin-bottom: 24px; }
-  .guide-preview-list { list-style: none; text-align: left; margin-bottom: 28px; }
-  .guide-preview-list li { display: flex; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 13px; color: #9A8880; }
-  .guide-preview-list li::before { content: '✓'; color: var(--sage-lt); font-weight: 700; flex-shrink: 0; }
+  .hero-inner { max-width: 640px; margin: 0 auto; }
+  .hero-location {
+    font-family: var(--sans); font-size: 10px;
+    letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--muted); font-weight: 400; margin-bottom: 20px;
+  }
+  .hero h1 { margin-bottom: 18px; }
+  .hero-desc {
+    font-size: 16px; color: var(--muted); font-weight: 300;
+    line-height: 1.8; max-width: 460px; margin: 0 auto 36px;
+  }
+  .hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+  /* ── LATEST POSTS ── */
+  .posts-heading {
+    display: flex; align-items: baseline;
+    justify-content: space-between; margin-bottom: 28px;
+  }
+  .posts-heading h2 { font-size: 28px; }
+  .posts-heading a {
+    font-size: 11px; font-weight: 500; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--accent);
+  }
+  .posts-heading a:hover { color: var(--accent-dk); }
+
+  /* ── GUIDE STRIP ── */
+  .guide-strip {
+    background: var(--ink);
+    padding: 48px 32px;
+  }
+  .guide-strip-inner {
+    max-width: var(--max); margin: 0 auto;
+    display: flex; align-items: center;
+    justify-content: space-between; gap: 32px; flex-wrap: wrap;
+  }
+  .guide-strip-text {}
+  .guide-strip-eyebrow {
+    font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: #5A4A3A; font-weight: 400; margin-bottom: 8px;
+  }
+  .guide-strip-title {
+    font-family: var(--serif); font-size: 28px; font-weight: 700;
+    color: white; line-height: 1.2; margin-bottom: 8px;
+  }
+  .guide-strip-title em { color: var(--accent); font-style: italic; }
+  .guide-strip-desc { font-size: 13px; color: #6A5A4A; font-weight: 300; max-width: 460px; }
+  .guide-strip-actions { display: flex; gap: 10px; flex-shrink: 0; flex-wrap: wrap; }
 
   /* ── ABOUT STRIP ── */
-  .about-strip {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 48px;
-    align-items: start;
+  .about-strip-inner {
+    max-width: var(--max); margin: 0 auto;
+    display: grid; grid-template-columns: 160px 1fr;
+    gap: 48px; align-items: center;
+    padding: 0 32px;
   }
   .about-avatar {
-    aspect-ratio: 1;
-    background: var(--linen);
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 64px;
-    border: 3px solid var(--border);
+    width: 160px; height: 160px; border-radius: 50%;
+    background: var(--linen); display: flex;
+    align-items: center; justify-content: center;
+    font-size: 56px; border: 2px solid var(--border);
+    flex-shrink: 0;
   }
-  .about-creds { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-  .about-cred { font-size: 11px; font-weight: 600; padding: 4px 12px; border-radius: 20px; background: var(--linen); color: var(--warm); border: 1px solid var(--border); }
+  .about-text-block {}
+  .about-text-block h2 { font-size: 28px; margin-bottom: 10px; }
+  .about-text-block p { font-size: 14px; max-width: 500px; }
+  .about-text-block a {
+    font-size: 11px; font-weight: 500; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--accent); margin-top: 14px;
+    display: inline-block;
+  }
 
-  /* ── FARM SECTION ── */
-  .farm-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-  .farm-card { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); background: var(--white); }
-  .farm-card-image { height: 180px; background: var(--linen); display: flex; align-items: center; justify-content: center; font-size: 48px; }
-  .farm-card-body { padding: 20px; }
-  .farm-card-title { font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
-  .farm-card-desc { font-size: 13px; color: var(--warm); line-height: 1.6; margin-bottom: 12px; }
-
-  /* ── EMAIL SIGNUP ── */
-  .signup-section { background: var(--ink); text-align: center; }
-  .signup-section h2 { color: var(--white); margin-bottom: 16px; }
-  .signup-section p { color: #9A8880; max-width: 500px; margin: 0 auto 32px; }
-  .signup-form { display: flex; gap: 12px; max-width: 440px; margin: 0 auto; }
-  .signup-form .input { flex: 1; }
-  .signup-note { font-size: 12px; color: #5A4A44; margin-top: 12px; }
+  @media (max-width: 680px) {
+    .hero { padding: 72px 20px 60px; }
+    .about-strip-inner { grid-template-columns: 1fr; text-align: center; }
+    .about-avatar { margin: 0 auto; }
+    .guide-strip-inner { flex-direction: column; text-align: center; }
+  }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
+<div class="accent-bar"></div>
+
 <nav class="nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">Ashlee <span>Roberts</span></a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="pages/about.html">About</a></li>
+      <li><a href="pages/blog.html">Blog</a></li>
       <li><a href="pages/digital-products.html">Guides</a></li>
-      <li><a href="pages/green-star-grove.html">Farm</a></li>
       <li><a href="pages/shop.html">Shop</a></li>
-      <li><a href="YOUR_KIT_FREEBIE_LINK" class="nav-cta">Free Play Chart</a></li>
+      <li><a href="pages/green-star-grove.html">Farm</a></li>
+      <li><a href="pages/about.html">About</a></li>
+      <li><a href="https://shop.ashleegroberts.com/freebie" class="nav-cta">Free Chart</a></li>
     </ul>
     <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -152,190 +125,136 @@
 </nav>
 
 <!-- HERO -->
-<section class="hero" style="padding:0;">
-  <div class="hero-content">
-    <span class="hero-eyebrow">Granbury, Texas · Mom · Farm Owner · Creator</span>
-    <h1>Play with<br><em>purpose.</em><br>Live with roots.</h1>
-    <p>Baby development guides rooted in real science, farm-raised eggs and sourdough you can taste, and honest resources for moms who want both intention and simplicity.</p>
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-location">Granbury, Texas</p>
+    <h1>Rooted living,<br><em>real life.</em></h1>
+    <p class="hero-desc">Baby development, farm mornings, sourdough, and the everyday in between — from a small farm in Granbury, Texas.</p>
     <div class="hero-actions">
-      <a href="YOUR_KIT_FREEBIE_LINK" class="btn btn-primary btn-lg">Get the Free Play Chart</a>
-      <a href="pages/digital-products.html" class="btn btn-outline btn-lg" style="color:var(--blush); border-color:rgba(242,196,178,0.3);">See the Guide →</a>
-    </div>
-  </div>
-  <div class="hero-image">
-    <div class="hero-image-placeholder">
-      <p class="big">🌿</p>
-      <p>Add your hero photo here — replace this div with an &lt;img&gt; tag pointing to your image file in the images/ folder</p>
+      <a href="pages/blog.html" class="btn btn-ink">Read the Blog</a>
+      <a href="https://shop.ashleegroberts.com/freebie" class="btn btn-outline">Free Play Chart →</a>
     </div>
   </div>
 </section>
 
-<!-- STRIP -->
-<div class="intro-strip">
-  <div class="strip-inner">
-    <div class="strip-item"><p class="strip-num">5</p><p class="strip-label">Dev Phases</p></div>
-    <div class="strip-divider"></div>
-    <div class="strip-item"><p class="strip-num">20+</p><p class="strip-label">Activities</p></div>
-    <div class="strip-divider"></div>
-    <div class="strip-item"><p class="strip-num">100%</p><p class="strip-label">DIY Options</p></div>
-    <div class="strip-divider"></div>
-    <div class="strip-item"><p class="strip-num">0–12</p><p class="strip-label">Months Covered</p></div>
-    <div class="strip-divider"></div>
-    <div class="strip-item"><p class="strip-num">🌱</p><p class="strip-label">Granbury, TX</p></div>
+<!-- LATEST POSTS -->
+<section class="section section-white">
+  <div class="wrap">
+    <div class="posts-heading">
+      <h2>Recently on the blog</h2>
+      <a href="pages/blog.html">All posts →</a>
+    </div>
+    <div class="grid-3">
+
+      <!-- Post 1 — Tummy Time (live) -->
+      <a href="pages/blog/tummy-time-tips.html" class="card post-card">
+        <div class="post-card-image">🌱</div>
+        <div class="post-card-body">
+          <p class="post-card-cat">Baby + Toddler</p>
+          <h3 class="post-card-title">Tummy Time From Day One — Why It Matters More Than You Think</h3>
+          <p class="post-card-excerpt">The one activity that builds every motor milestone, why most parents start too late, and exactly how to make it work from the very first day home.</p>
+          <span class="post-card-link">Read more →</span>
+        </div>
+      </a>
+
+      <!-- Post 2 — placeholder -->
+      <div class="card post-card">
+        <div class="post-card-image">🌾</div>
+        <div class="post-card-body">
+          <p class="post-card-cat">Farm + Homestead</p>
+          <h3 class="post-card-title">A Morning on the Farm — What Our Routine Actually Looks Like</h3>
+          <p class="post-card-excerpt">Coming soon — follow along on Pinterest for updates.</p>
+          <span class="post-card-link" style="color:var(--muted);">Coming soon</span>
+        </div>
+      </div>
+
+      <!-- Post 3 — placeholder -->
+      <div class="card post-card">
+        <div class="post-card-image">🍞</div>
+        <div class="post-card-body">
+          <p class="post-card-cat">Sourdough + Baking</p>
+          <h3 class="post-card-title">How to Start a Sourdough Starter — Everything You Actually Need</h3>
+          <p class="post-card-excerpt">Coming soon — follow along on Pinterest for updates.</p>
+          <span class="post-card-link" style="color:var(--muted);">Coming soon</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GUIDE STRIP -->
+<div class="guide-strip">
+  <div class="guide-strip-inner">
+    <div class="guide-strip-text">
+      <p class="guide-strip-eyebrow">Now Available</p>
+      <h2 class="guide-strip-title">Play on <em>Purpose:</em><br>Baby's First Year</h2>
+      <p class="guide-strip-desc">Month-by-month developmental play with the science behind why it works — plus free DIY alternatives for every activity.</p>
+    </div>
+    <div class="guide-strip-actions">
+      <a href="pages/digital-products.html" class="btn btn-primary">Get the Guide — $8.99</a>
+      <a href="pages/digital-products.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.15);color:#9A8878;">Learn More</a>
+    </div>
   </div>
 </div>
 
-<!-- FEATURED GUIDE -->
-<section>
-  <div class="container">
-    <div class="featured-guide">
-      <div class="featured-visual">
-        <p style="font-size:10px; letter-spacing:0.2em; color:#5A4A44; text-transform:uppercase; margin-bottom:12px;">New Digital Guide</p>
-        <h3>Play on <em>Purpose:</em><br>Baby's First Year</h3>
-        <p>Month-by-month sensory and developmental play for 0 to 12 months</p>
-        <ul class="guide-preview-list">
-          <li>The science behind why each activity matters</li>
-          <li>Step-by-step instructions for every activity</li>
-          <li>Free DIY option for everything</li>
-          <li>Trusted product picks by phase</li>
-          <li>Safety notes throughout</li>
-        </ul>
-        <a href="YOUR_KIT_PRODUCT_LINK_HERE" class="btn btn-primary" style="width:100%; justify-content:center;">Get the Guide — $8.99</a>
-      </div>
-      <div>
-        <span class="eyebrow">Featured Resource</span>
-        <h2>You don't need more toys.<br>You need to know <em>why.</em></h2>
-        <div class="rule-accent"></div>
-        <p>When my son was a newborn I spent way too much time Googling "what do I do with a newborn all day" and getting answers that felt vague and generic. I put together this guide because I wanted something that actually explained what was happening in my baby's brain — not just a list of activities to fill the time.</p>
-        <p>Every activity inside includes the developmental science, a step-by-step how-to, honest product picks, and a free DIY alternative for every single thing. Grab the free quick reference chart to start, or jump straight into the full guide.</p>
-        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:28px;">
-          <a href="YOUR_KIT_PRODUCT_LINK_HERE" class="btn btn-primary">Get the Guide — $8.99</a>
-          <a href="YOUR_KIT_FREEBIE_LINK" class="btn btn-outline">Free Chart First →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ABOUT STRIP -->
-<section class="section-linen">
-  <div class="container">
-    <div class="about-strip">
-      <div>
-        <div class="about-avatar">🌿</div>
-      </div>
-      <div>
-        <span class="eyebrow">About Ashlee</span>
-        <h2>Mom, farmer,<br><em>relentless researcher.</em></h2>
-        <div class="rule-accent"></div>
-        <p>I live on a small farm in Granbury, Texas with my husband and our son. We raise pasture-raised chickens, bake artisan sourdough, and sell at the local farmers market every other Saturday. I am also a content creator and brand ambassador for UGC Creator.</p>
-        <p>Everything I share — whether it is a baby development tip, a sourdough recipe, or a product recommendation — comes from genuine personal experience. I research obsessively, filter out the noise, and share what actually works in real life.</p>
-        <div class="about-creds">
-          <span class="about-cred">🌱 Green Star Grove Farm</span>
-          <span class="about-cred">🥚 Pasture-Raised Eggs</span>
-          <span class="about-cred">🍞 Artisan Sourdough</span>
-          <span class="about-cred">📱 UGC Creator</span>
-        </div>
-        <a href="pages/about.html" class="btn btn-outline" style="margin-top:24px;">More About Me →</a>
-      </div>
+<section class="section section-sand">
+  <div class="about-strip-inner">
+    <div class="about-avatar">🌿</div>
+    <div class="about-text-block">
+      <span class="eyebrow">About Ashlee</span>
+      <h2>Mom, farmer,<br><em>relentless researcher.</em></h2>
+      <p>Farming wasn't my dream first — it was my husband's. Moving to Granbury and building Green Star Grove was an act of love. Somewhere between the early mornings and the sourdough, it became mine too. I share what I actually research, use, and believe in — nothing else.</p>
+      <a href="pages/about.html">More about me →</a>
     </div>
   </div>
 </section>
 
-<!-- FARM SECTION -->
-<section class="section-white">
-  <div class="container">
-    <div style="text-align:center; max-width:560px; margin:0 auto 48px;">
-      <span class="eyebrow">Green Star Grove</span>
-      <h2>Fresh from our farm in <em>Granbury.</em></h2>
-      <p>Pasture-raised eggs, artisan sourdough, and seasonal farm products. Available every other Saturday at the Granbury Farmers Market and through farm pickup.</p>
-    </div>
-    <div class="farm-grid">
-      <div class="farm-card">
-        <div class="farm-card-image">🥚</div>
-        <div class="farm-card-body">
-          <p class="farm-card-title">Pasture-Raised Eggs</p>
-          <p class="farm-card-desc">Our hens roam on fresh pasture year-round. You can taste the difference — rich yolks, real flavor.</p>
-          <a href="pages/green-star-grove.html" class="btn btn-outline" style="font-size:12px; padding:8px 16px;">Learn More →</a>
-        </div>
-      </div>
-      <div class="farm-card">
-        <div class="farm-card-image">🍞</div>
-        <div class="farm-card-body">
-          <p class="farm-card-title">Artisan Sourdough</p>
-          <p class="farm-card-desc">Long-fermented, naturally leavened sourdough including our Spicy Monterey Jalapeño variety.</p>
-          <a href="pages/green-star-grove.html" class="btn btn-outline" style="font-size:12px; padding:8px 16px;">Learn More →</a>
-        </div>
-      </div>
-      <div class="farm-card">
-        <div class="farm-card-image">📍</div>
-        <div class="farm-card-body">
-          <p class="farm-card-title">Find Us</p>
-          <p class="farm-card-desc">Granbury Farmers Market every other Saturday, plus farm pickup in Granbury. Follow along to know when we will be there.</p>
-          <a href="pages/green-star-grove.html" class="btn btn-sage" style="font-size:12px; padding:8px 16px; color:white;">Farm Details →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EMAIL SIGNUP -->
-<section class="signup-section">
-  <div class="container-narrow" style="text-align:center;">
-    <span class="eyebrow" style="color:#6A5A54;">Free Download</span>
-    <h2>Grab the free baby play<br><em>reference chart</em></h2>
-    <p>All five developmental phases, 0 to 12 months, on one beautiful page. Free, instant download — no fluff.</p>
-    <form class="signup-form" action="YOUR_KIT_FREEBIE_LINK" method="get">
-      <input type="email" name="email" class="input" placeholder="your@email.com" required>
-      <button type="submit" class="btn btn-primary">Send It →</button>
-    </form>
-    <p class="signup-note">Free PDF. Occasional notes from Ashlee. Unsubscribe any time.</p>
-  </div>
-</section>
-
-<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
       <div>
         <p class="footer-brand">Ashlee <span>Roberts</span></p>
-        <p class="footer-tagline">Baby development guides, farm life, and honest mom resources from Granbury, Texas.</p>
+        <p class="footer-tagline">Baby development, farm life, and honest resources from Granbury, Texas.</p>
         <div class="footer-social">
           <a href="https://pinterest.com/ashleegroberts" aria-label="Pinterest">📌</a>
           <a href="https://tiktok.com/@ashleegroberts" aria-label="TikTok">🎵</a>
           <a href="https://shopmy.us/ashleegroberts" aria-label="ShopMy">🛍</a>
-          <a href="https://instagram.com/ashleegroberts" aria-label="Instagram">📸</a>
         </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Blog</p>
+        <ul class="footer-links">
+          <li><a href="pages/blog.html">All Posts</a></li>
+          <li><a href="pages/blog.html#baby">Baby + Toddler</a></li>
+          <li><a href="pages/blog.html#farm">Farm + Homestead</a></li>
+          <li><a href="pages/blog.html#sourdough">Sourdough + Baking</a></li>
+          <li><a href="pages/blog.html#everyday">The Everyday</a></li>
+        </ul>
       </div>
       <div>
         <p class="footer-col-title">Resources</p>
         <ul class="footer-links">
-          <li><a href="YOUR_KIT_FREEBIE_LINK">Free Play Chart</a></li>
-          <li><a href="pages/digital-products.html">Play on Purpose Guide</a></li>
+          <li><a href="https://shop.ashleegroberts.com/freebie">Free Play Chart</a></li>
+          <li><a href="pages/digital-products.html">Play on Purpose</a></li>
           <li><a href="pages/shop.html">Shop My Picks</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="footer-col-title">Farm</p>
-        <ul class="footer-links">
-          <li><a href="pages/green-star-grove.html">Green Star Grove</a></li>
-          <li><a href="pages/green-star-grove.html#eggs">Pasture-Raised Eggs</a></li>
-          <li><a href="pages/green-star-grove.html#sourdough">Artisan Sourdough</a></li>
         </ul>
       </div>
       <div>
         <p class="footer-col-title">Connect</p>
         <ul class="footer-links">
           <li><a href="pages/about.html">About Ashlee</a></li>
+          <li><a href="pages/green-star-grove.html">Green Star Grove</a></li>
           <li><a href="mailto:ashleegroberts@gmail.com">Email Me</a></li>
-          <li><a href="https://shopmy.us/ashleegroberts">ShopMy</a></li>
+          <li><a href="pages/disclosure.html">Affiliate Disclosure</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">© 2025 ASHLEE ROBERTS · ASHLEEGROBERTS.COM · ALL RIGHTS RESERVED</p>
+      <p class="footer-copy">© 2025 ASHLEE ROBERTS · ALL RIGHTS RESERVED</p>
       <div class="footer-legal">
-        <a href="pages/privacy.html">Privacy Policy</a>
+        <a href="pages/privacy.html">Privacy</a>
         <a href="pages/disclosure.html">Affiliate Disclosure</a>
       </div>
     </div>
@@ -343,9 +262,8 @@
 </footer>
 
 <script>
-  const btn = document.getElementById('menuBtn');
-  const links = document.getElementById('navLinks');
-  btn.addEventListener('click', () => links.classList.toggle('open'));
+  document.getElementById('menuBtn').addEventListener('click', () =>
+    document.getElementById('navLinks').classList.toggle('open'));
 </script>
 </body>
 </html>

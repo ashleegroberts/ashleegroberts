@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Ashlee Roberts</title>
+<meta name="description" content="Baby development, farm life, sourdough baking, and everyday real life from Granbury, Texas.">
+<link rel="stylesheet" href="../css/main.css">
+<style>
+  .blog-hero { padding: 72px 32px 56px; text-align: center; position: relative; }
+  .blog-hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(to right, #F2D4B8, #C09070, #A07850); }
+  .blog-hero h1 { margin-bottom: 12px; }
+  .blog-hero p { color: var(--muted); max-width: 480px; margin: 0 auto; font-size: 15px; font-weight: 300; }
+
+  .cat-nav { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 40px; }
+  .cat-btn {
+    padding: 7px 18px; border-radius: 20px; border: 1px solid var(--border);
+    font-family: var(--sans); font-size: 11px; font-weight: 500;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--muted); background: var(--white); cursor: pointer;
+    transition: all 0.15s; text-decoration: none;
+  }
+  .cat-btn:hover, .cat-btn.active { background: var(--ink); color: white; border-color: var(--ink); }
+
+  .cat-section { margin-bottom: 64px; }
+  .cat-header {
+    display: flex; align-items: baseline;
+    justify-content: space-between; margin-bottom: 24px;
+    padding-bottom: 14px; border-bottom: 1px solid var(--border);
+  }
+  .cat-header h2 { font-size: 24px; }
+  .cat-header span { font-size: 11px; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+</style>
+</head>
+<body>
+
+<div class="accent-bar"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">Ashlee <span>Roberts</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="digital-products.html">Guides</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="green-star-grove.html">Farm</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="https://shop.ashleegroberts.com/freebie" class="nav-cta">Free Chart</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="blog-hero section-white">
+  <div class="wrap-narrow">
+    <span class="eyebrow">The Blog</span>
+    <h1>Rooted living,<br><em>real life.</em></h1>
+    <p>Baby development, farm mornings, sourdough, and the everyday in between.</p>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="wrap">
+
+    <div class="cat-nav">
+      <a href="#baby" class="cat-btn active">Baby + Toddler</a>
+      <a href="#farm" class="cat-btn">Farm + Homestead</a>
+      <a href="#sourdough" class="cat-btn">Sourdough + Baking</a>
+      <a href="#everyday" class="cat-btn">The Everyday</a>
+    </div>
+
+    <!-- BABY + TODDLER -->
+    <div class="cat-section" id="baby">
+      <div class="cat-header">
+        <h2>🌱 Baby + Toddler</h2>
+        <span>Development, play, and the first years</span>
+      </div>
+      <div class="grid-3">
+        <a href="blog/tummy-time-tips.html" class="card post-card">
+          <div class="post-card-image">🌱</div>
+          <div class="post-card-body">
+            <p class="post-card-cat">Baby + Toddler</p>
+            <h3 class="post-card-title">Tummy Time From Day One — Why It Matters More Than You Think</h3>
+            <p class="post-card-excerpt">The one activity that builds every motor milestone, why most parents start too late, and exactly how to make it work.</p>
+            <span class="post-card-link">Read more →</span>
+          </div>
+        </a>
+        <div class="card post-card" style="opacity:0.5;">
+          <div class="post-card-image">👀</div>
+          <div class="post-card-body">
+            <p class="post-card-cat">Baby + Toddler</p>
+            <h3 class="post-card-title">What Your Newborn Can Actually See — And Why It Matters</h3>
+            <p class="post-card-excerpt">Coming soon.</p>
+            <span class="post-card-link" style="color:var(--muted);">Coming soon</span>
+          </div>
+        </div>
+        <div class="card post-card" style="opacity:0.5;">
+          <div class="post-card-image">😄</div>
+          <div class="post-card-body">
+            <p class="post-card-cat">Baby + Toddler</p>
+            <h3 class="post-card-title">The Harvard Concept I Use Every Day With My Son</h3>
+            <p class="post-card-excerpt">Coming soon.</p>
+            <span class="post-card-link" style="color:var(--muted);">Coming soon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FARM + HOMESTEAD -->
+    <div class="cat-section" id="farm">
+      <div class="cat-header">
+        <h2>🌾 Farm + Homestead</h2>
+        <span>Green Star Grove and slow living</span>
+      </div>
+      <div class="grid-3">
+        <div class="card post-card" style="opacity:0.5;">
+          <div class="post-card-image">🌾</div>
+          <div class="post-card-body">
+            <p class="post-card-cat">Farm + Homestead</p>
+            <h3 class="post-card-title">A Morning on the Farm — What Our Routine Actually Looks Like</h3>
+            <p class="post-card-excerpt">Coming soon.</p>
+            <span class="post-card-link" style="color:var(--muted);">Coming soon</span>
+          </div>
+        </div>
+        <div class="card post-card" style="opacity:0.5;">
+          <div class="post-card-image">🥚</div>
+          <div class="post-card-body">
+            <p class="post-card-cat">Farm + Homestead</p>
+            <h3 class="post-card-title">Why Pasture-Raised Eggs Look Different (And Taste Better)</h3>
+            <p class="post-card-excerpt">Coming soon.</p>
+            <span class="post-card-link" style="color:var(--muted);">Coming soon</span>
+          </div>
+        </div>
+        <div class="card post-card" style="opacity:0.5;">
+          <div class="post-card-image">📍</div>
+          <div class="post-card-body">
+            <p class="post-card-cat">Farm + Homestead</p>
+            <h3 class="post-card-title">Our Farmers Market Setup — What We Bring and How We Display It</h3>
+            <p class="post-card-excerpt">Coming soon.</p>
+            <span class="post-card-link" style="color:var(--muted);">Coming soon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOURDOUGH + BAKING -->
+    <div class="cat-section" id="sourdough">
+      <div class="cat-header">
+        <h2>🍞 Sourdough + Baking</h2>
+        <span>From our kitchen in Granbury</span>
+      </div>
+      <div class="grid-3">
+        <div class="card post-card" style="opacity:0.5;">
+          <div class="post-card-image">🍞</div>
+          <div class="post-card-body">
+            <p class="post-card-cat">Sourdough + Baking</p>
+            <h3 class="post-card-title">How to Start a Sourdough Starter — Everything You Actually Need</h3>
+            <p class="post-card-excerpt">Coming soon.</p>
+            <span class="post-card-link" style="color:var(--muted);">Coming soon</span>
+          </div>
+        </div>
+        <div class="card post-card" style="opacity:0.5;">
+          <div class="post-card-image">🌶</div>
+          <div class="post-card-body">
+            <p class="post-card-cat">Sourdough + Baking</p>
+            <h3 class="post-card-title">Our Spicy Monterey Jalapeño Sourdough — The Recipe</h3>
+            <p class="post-card-excerpt">Coming soon.</p>
+            <span class="post-card-link" style="color:var(--muted);">Coming soon</span>
+          </div>
+        </div>
+        <div class="card post-card" style="opacity:0.5;">
+          <div class="post-card-image">⚖️</div>
+          <div class="post-card-body">
+            <p class="post-card-cat">Sourdough + Baking</p>
+            <h3 class="post-card-title">Sourdough Tools Worth Buying — What I Actually Use Every Week</h3>
+            <p class="post-card-excerpt">Coming soon.</p>
+            <span class="post-card-link" style="color:var(--muted);">Coming soon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- THE EVERYDAY -->
+    <div class="cat-section" id="everyday">
+      <div class="cat-header">
+        <h2>🏡 The Everyday</h2>
+        <span>Routines, style, and real life</span>
+      </div>
+      <div class="grid-3">
+        <div class="card post-card" style="opacity:0.5;">
+          <div class="post-card-image">☕</div>
+          <div class="post-card-body">
+            <p class="post-card-cat">The Everyday</p>
+            <h3 class="post-card-title">My Morning Routine as a Work-from-Home Farm Mom</h3>
+            <p class="post-card-excerpt">Coming soon.</p>
+            <span class="post-card-link" style="color:var(--muted);">Coming soon</span>
+          </div>
+        </div>
+        <div class="card post-card" style="opacity:0.5;">
+          <div class="post-card-image">👜</div>
+          <div class="post-card-body">
+            <p class="post-card-cat">The Everyday</p>
+            <h3 class="post-card-title">What's In My Diaper Bag — Honest Mom Edition</h3>
+            <p class="post-card-excerpt">Coming soon.</p>
+            <span class="post-card-link" style="color:var(--muted);">Coming soon</span>
+          </div>
+        </div>
+        <div class="card post-card" style="opacity:0.5;">
+          <div class="post-card-image">🏡</div>
+          <div class="post-card-body">
+            <p class="post-card-cat">The Everyday</p>
+            <h3 class="post-card-title">Intentional Living on a Small Farm — What That Actually Means to Us</h3>
+            <p class="post-card-excerpt">Coming soon.</p>
+            <span class="post-card-link" style="color:var(--muted);">Coming soon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <p class="footer-brand">Ashlee <span>Roberts</span></p>
+        <p class="footer-tagline">Baby development, farm life, and honest resources from Granbury, Texas.</p>
+        <div class="footer-social">
+          <a href="https://pinterest.com/ashleegroberts">📌</a>
+          <a href="https://tiktok.com/@ashleegroberts">🎵</a>
+          <a href="https://shopmy.us/ashleegroberts">🛍</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Categories</p>
+        <ul class="footer-links">
+          <li><a href="#baby">Baby + Toddler</a></li>
+          <li><a href="#farm">Farm + Homestead</a></li>
+          <li><a href="#sourdough">Sourdough + Baking</a></li>
+          <li><a href="#everyday">The Everyday</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Resources</p>
+        <ul class="footer-links">
+          <li><a href="https://shop.ashleegroberts.com/freebie">Free Play Chart</a></li>
+          <li><a href="digital-products.html">Play on Purpose</a></li>
+          <li><a href="shop.html">Shop My Picks</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Connect</p>
+        <ul class="footer-links">
+          <li><a href="about.html">About Ashlee</a></li>
+          <li><a href="mailto:ashleegroberts@gmail.com">Email Me</a></li>
+          <li><a href="disclosure.html">Affiliate Disclosure</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 ASHLEE ROBERTS · ALL RIGHTS RESERVED</p>
+      <div class="footer-legal">
+        <a href="disclosure.html">Affiliate Disclosure</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menuBtn').addEventListener('click', () =>
+    document.getElementById('navLinks').classList.toggle('open'));
+  document.querySelectorAll('.cat-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

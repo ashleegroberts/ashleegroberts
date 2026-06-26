@@ -66,7 +66,7 @@ Search all files for these and replace:
 
 | Placeholder | Replace with |
 |---|---|
-| YOUR_KIT_FREEBIE_LINK | Your Kit freebie landing page URL |
+| YOUR_KIT_FREEBIE_LINK | ✓ DONE — shop.ashleegroberts.com/freebie |
 | YOUR_KIT_PRODUCT_LINK_HERE | Your Kit product page URL |
 | YOUR_NEWBORN_LIST_ID | Amazon Idea List ID for newborn products |
 | YOUR_2MO_LIST_ID | Amazon Idea List ID for 2-month products |
