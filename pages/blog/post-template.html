@@ -10,7 +10,7 @@
 <meta property="og:image" content="../../images/[POST-IMAGE].jpg">
 <link rel="stylesheet" href="../../css/main.css">
 <style>
-  .post-hero { padding: 72px 32px 0; background: var(--white); position: relative; }
+  .post-hero { padding: 72px 32px 0; background: var(--parch); position: relative; }
   .post-hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(to right, #F2D4B8, #C09070, #A07850); }
   .post-hero-inner { max-width: 720px; margin: 0 auto; }
   .post-breadcrumb { font-size: 11px; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 20px; }
@@ -20,7 +20,7 @@
   .post-hero-image { width: 100%; max-width: 720px; aspect-ratio: 16/9; background: var(--sand); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 64px; margin: 0 auto; overflow: hidden; }
   .post-hero-image img { width: 100%; height: 100%; object-fit: cover; }
 
-  .post-content { background: var(--white); padding: 56px 32px 80px; }
+  .post-content { background: var(--parch); padding: 56px 32px 80px; }
 
   .post-sidebar-cta {
     background: var(--sand); border: 1px solid var(--border);
@@ -32,14 +32,16 @@
   .related { background: var(--sand); padding: 56px 32px; }
   .related h2 { font-size: 24px; margin-bottom: 24px; }
 </style>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
 
-<div class="accent-bar"></div>
-
 <nav class="nav">
   <div class="nav-inner">
-    <a href="../../index.html" class="nav-logo">Ashlee <span>Roberts</span></a>
+    <a href="../../index.html" class="nav-logo">Ashlee Roberts</a>
     <ul class="nav-links" id="navLinks">
       <li><a href="../../index.html">Home</a></li>
       <li><a href="../blog.html" class="active">Blog</a></li>
@@ -133,7 +135,7 @@
 </div>
 
 <!-- RELATED POSTS -->
-<section class="related">
+<section style="background:var(--sand);padding:56px 32px;">
   <div class="wrap">
     <h2>More from the blog</h2>
     <div class="grid-3">

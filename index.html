@@ -101,14 +101,16 @@
     .guide-strip-inner { flex-direction: column; text-align: center; }
   }
 </style>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
 
-<div class="accent-bar"></div>
-
 <nav class="nav">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Ashlee <span>Roberts</span></a>
+    <a href="index.html" class="nav-logo">Ashlee Roberts</a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="pages/blog.html">Blog</a></li>
@@ -138,7 +140,7 @@
 </section>
 
 <!-- LATEST POSTS -->
-<section class="section section-white">
+<section style="background:var(--parch);padding:80px 0;">
   <div class="wrap">
     <div class="posts-heading">
       <h2>Recently on the blog</h2>
@@ -184,22 +186,23 @@
 </section>
 
 <!-- GUIDE STRIP -->
-<div class="guide-strip">
-  <div class="guide-strip-inner">
-    <div class="guide-strip-text">
-      <p class="guide-strip-eyebrow">Now Available</p>
-      <h2 class="guide-strip-title">Play on <em>Purpose:</em><br>Baby's First Year</h2>
-      <p class="guide-strip-desc">Month-by-month developmental play with the science behind why it works — plus free DIY alternatives for every activity.</p>
+<section style="background:var(--sand);padding:56px 32px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div style="max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;">
+    <div>
+      <span class="eyebrow">Now Available</span>
+      <h2 style="font-size:28px;margin-bottom:8px;">Play on <em>Purpose:</em><br>Baby's First Year</h2>
+      <p style="font-size:14px;color:var(--muted);max-width:460px;font-weight:300;">Month-by-month developmental play with the science behind why it works — plus free DIY alternatives for every activity.</p>
     </div>
-    <div class="guide-strip-actions">
+    <div style="display:flex;gap:10px;flex-wrap:wrap;flex-shrink:0;">
       <a href="pages/digital-products.html" class="btn btn-primary">Get the Guide — $8.99</a>
-      <a href="pages/digital-products.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.15);color:#9A8878;">Learn More</a>
+      <a href="pages/digital-products.html" class="btn btn-outline">Learn More</a>
     </div>
   </div>
+</section>
 </div>
 
 <!-- ABOUT STRIP -->
-<section class="section section-sand">
+<section style="background:var(--parch);padding:72px 0;">
   <div class="about-strip-inner">
     <div class="about-avatar">🌿</div>
     <div class="about-text-block">
